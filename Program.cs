@@ -1,9 +1,12 @@
-﻿int numero;
+﻿double soma = 0;
 
-Console.Write("Informe o número da tabuada: ");
-numero = int.Parse(Console.ReadLine());
-
-for (int i = 1; i <= 10; i++)
+for (int i = 1; i <= 5; i++)
 {
-    Console.WriteLine(numero + " x " + i + " = " + (numero * i));
+    Console.Write("Informe um valor: ");
+    soma += double.Parse(Console.ReadLine());
 }
+
+double media = soma / 5;
+
+Console.WriteLine("Soma dos valores: " + soma);
+Console.WriteLine("Média dos valores: " + media);
