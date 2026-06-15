@@ -1,23 +1,14 @@
-﻿Console.Write("Informe a idade do passageiro: ");
-int idade = int.Parse(Console.ReadLine());
+﻿using System;
 
-Console.Write("Informe o valor normal da passagem: ");
-double valorNormal = double.Parse(Console.ReadLine());
-
-double valorPagar;
-
-if (idade <= 5)
+class Program
 {
-    valorPagar = 0;
-}
-else if (idade >= 60)
-{
-    valorPagar = valorNormal / 2;
-}
-else
-{
-    valorPagar = valorNormal;
-}
+    static void Main()
+    {
+        Console.Write("Informe o número final da contagem: ");
+        int numero = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"Valor normal da passagem: R$ {valorNormal:F2}");
-Console.WriteLine($"Valor a pagar: R$ {valorPagar:F2}");
+        for (int i = 1; i <= numero; i++)
+        {
+            Console.WriteLine(i);
+        }
+    }
